@@ -31,6 +31,10 @@ export class WeatherServiceProvider {
         .set('longitude', "-90.1979")
         .set('daily', 'weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max')
         .set('timezone','America/Chicago')
+        .set('temperature_unit',"fahrenheit")
+        .set('windspeed_unit','mph')
+        .set('precipitation_unit','inch')
+        .set('forecast_days','1')
 
      };
 

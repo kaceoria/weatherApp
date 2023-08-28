@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherServiceProvider } from '../providers/weather-service/weather-service';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { WeatherServiceProvider } from '../providers/weather-service/weather-ser
   ],
   providers: [
     StatusBar,
+    Geolocation,
     SplashScreen,
     WeatherServiceProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
