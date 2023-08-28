@@ -22,6 +22,7 @@
     "@ionic-native/android-permissions": "^4.20.0",
     "@ionic-native/core": "4.20.0",
     "@ionic-native/geolocation": "^4.20.0",
+    "@ionic-native/native-geocoder": "^4.20.0",
     "@ionic-native/splash-screen": "4.20.0",
     "@ionic-native/status-bar": "4.20.0",
     "@ionic/pro": "2.0.4",
@@ -33,6 +34,7 @@
     "cordova-plugin-geolocation": "^4.1.0",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-nativegeocoder": "^3.5.1",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "ionic-angular": "3.9.9",
@@ -58,6 +60,9 @@
       "cordova-plugin-geolocation": {
         "GEOLOCATION_USAGE_DESCRIPTION": "To locate you",
         "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-nativegeocoder": {
+        "LOCATION_WHEN_IN_USE_DESCRIPTION": "Use geocoder service"
       }
     },
     "platforms": [

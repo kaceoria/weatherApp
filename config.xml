@@ -108,4 +108,7 @@
     </plugin>
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="^5.0.0" />
+    <plugin name="cordova-plugin-nativegeocoder" spec="^3.5.1">
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Use geocoder service" />
+    </plugin>
 </widget>

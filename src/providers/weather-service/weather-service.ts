@@ -5,12 +5,7 @@ import { map, catchError } from 'rxjs/operators';
 import {HttpParams} from "@angular/common/http";
 import { WeatherData } from './WeatherData';
 
-/*
-  Generated class for WeatherServiceProvider provider.
 
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class WeatherServiceProvider {
 

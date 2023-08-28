@@ -4,11 +4,45 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding [fullscreen]="true">
- 
+<ion-content padding class="home">
+  <ion-grid *ngIf="weather">
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <h2 class="location">{{weather.display_location.full}}</h2>
+        <div class="icon"><img src="{{weather.icon.url}}" alt=""></div>
+        <h3 class="desc">{{weather.weather}}</h3>
+        <h1 class="temp">{{weather.temp_f}}&deg;;</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <strong>Temp: </strong> {{weatherData?.daily?.temperature_2m_max[0]}} {{weatherData?.daily_units?.temperature_2m_max}}
+          </ion-item>
+          <ion-item>
+            <strong>Precipitation: </strong> {{weatherData?.precipitation_probability_max}}
+          </ion-item>
+          <ion-item>
+            <strong>Dew Point: </strong> {{weatherData?.deowpoint_string}}
+          </ion-item>
+          <ion-item>
+            <strong>Wind Speed: </strong> {{weatherData?.windspeed_unit}}
+          </ion-item>
+          <!-- <ion-item>
+            <strong>Heat Index: </strong> {{weatherData?.heat_indes_string}}
+          </ion-item> -->
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+
+<!--  
   <h2>This is the timezone: {{weatherData?.timezone}}</h2>
   <h2>This is the time of day: {{weatherData?.daily_units?.sunrise}}</h2>
-  <h2>It is currenly {{weatherData?.daily?.temperature_2m_max[0]}} {{weatherData?.daily_units?.temperature_2m_max}}</h2>
+  <h2>It is currenly {{weatherData?.daily?.temperature_2m_max[0]}} {{weatherData?.daily_units?.temperature_2m_max}}</h2> -->
 
 
 </ion-content>
