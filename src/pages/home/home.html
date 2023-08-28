@@ -5,6 +5,9 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>This is the timezone: {{weatherData.timezone}}</h2>
+  <h2>This is the timezone: {{weatherData?.timezone}}</h2>
+  <h2>This is the timezone: {{weatherData?.daily_units?.sunrise}}</h2>
+  <h2>It is currenly {{weatherData?.daily?.temperature_2m_max[0]}} {{weatherData?.daily_units?.temperature_2m_max}}</h2>
+
 
 </ion-content>
